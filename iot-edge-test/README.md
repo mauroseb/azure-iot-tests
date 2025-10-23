@@ -1,7 +1,7 @@
 # Azure IoT Edge Test
 
 ## Description
-The ARM template ```edgeDeploy.json``` deploys a VM to host IoT Edge services.
+The ARM template ```edgeDeploy.json``` deploys a VM to host IoT Edge services based on the official Azure IoT Edge docs but wiith some updates and modifications to be used with student subscriptions.
 
 ## Prerequisites
 
