@@ -1,7 +1,7 @@
 # Azure IoT Edge Test
 
 ## Description
-The template in this folder deploys a VM to host IoT Edge services.
+The ARM template ```edgeDeploy.json``` deploys a VM to host IoT Edge services.
 
 ## Prerequisites
 
@@ -22,7 +22,7 @@ $ export DEV_NAME=iot-edge-dev-1
 $ az deployment group create \
 --name "iot_edge_1" \
 --resource-group $RG_NAME \
---template-file "edgeDeploy.json" \
+--template-url "https://raw.githubusercontent.com/mauroseb/azure-iot-tests/refs/heads/main/iot-edge-test/edgeDeploy.json" \
 --parameters vmSize='Standard_B1ms' \
 --parameters dnsLabelPrefix='iot-edge-dev-1' \
 --parameters adminUsername='azureuser' \
