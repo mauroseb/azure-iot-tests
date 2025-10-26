@@ -2,6 +2,8 @@
 
 ## Description
 The ARM template ```edgeDeploy.json``` deploys a VM to host IoT Edge services based on the official Azure IoT Edge docs but wiith some updates and modifications to be used with student subscriptions.
+  - Basic SKU IPs were [retired](https://azure.microsoft.com/en-gb/updates?id=upgrade-to-standard-sku-public-ip-addresses-in-azure-by-30-september-2025-basic-sku-will-be-retired) in 30 September 2025 so they were replaced with Standard SKU IPs.
+  - The VM size needs to be smaller than the default to be able to use it with Azure for Students Subscription (using Standard_b1s)
 
 ## Prerequisites
 
